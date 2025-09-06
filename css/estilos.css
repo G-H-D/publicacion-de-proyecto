@@ -1,0 +1,92 @@
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+            font-family: "Raleway", sans-serif;
+        }
+        body {
+            background-color: #F5F1E9; /* Color beige claro */
+            background-image: url(./imagenes/textura.jpg);
+        }
+        .navbar {
+            background-color: #007bff; /* Color azul */
+        }
+        .navbar-brand {
+            background-color: #28a745; /* Color verde para el logo */
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .navbar-nav .nav-link {
+            color: white !important;
+            margin: 0 10px;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ddd !important;
+        }
+        .search-form {
+            margin-left: auto; /* Empuja el formulario a la derecha */
+        }
+        .img-portada {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .tarjetasmedio {
+            height: 450px; /* Altura fija para todas las tarjetas */
+        }
+        .card-img-top {
+            height: 200px; /* Altura de la imagen */
+            object-fit: cover;
+        }
+        .card {
+            height: 450px;
+        }
+        .tarjetas-final {
+            height: 260px;
+            background-color: #e3f0ff;
+        }
+        .boton {
+            text-align: center;
+        }
+        .texto-categorias {
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        .btn-success{
+           background-color: #41ff41;            
+        }
+        .btn-success:hover{
+            background-color: #2bb52b;
+            color: black;
+        }
+        h5{
+            text-align: center;
+        }
+        .list-unstyled{
+           font-size: small; 
+        }
+        .bg-primary{
+            --bs-bg-opacity: .8;
+        }
+        .tarjetas-finales{
+            --bs-bg-opacity: .3;
+        }
+        .hero-image{
+            min-height: 25rem;
+            background-image: url(../imagenes/principal2.jpg);   
+            background-position: 100% 90%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .hero-image div{
+            min-height: inherit; /* Hereda el alto de su contenedor (hero-image) para mover el h2 sobre la imagen */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0000006e;
+            color: white;
+        }

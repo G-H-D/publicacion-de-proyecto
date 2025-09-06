@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Muebles</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Estilos personalizados -->
+     <link rel="stylesheet" href="./css/estilos.css">
+    <style>
+       
+    </style>
+</head>
+<body> <!-- Inicia el cuerpo del documento donde se coloca el contenido visible -->
+    <div class="container text-center">
+        <p class="fs-2 my-4">Tienda de <span class="text-primary">Muebles</span></p>
+    </div>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid"> <!-- Contenedor fluido para que la barra ocupe todo el ancho -->
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">Logo</a>
+            <!-- Botón para colapsar en pantallas pequeñas -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Enlaces de navegación -->
+            <div class="collapse navbar-collapse" id="navbarNav"> <!-- Contenedor colapsable del menú, identificado por navbarNav -->
+                <ul class="navbar-nav mx-auto"> <!-- mx-auto centra los enlaces -->
+                    <li class="nav-item"> <!-- Elemento de la lista de navegación -->
+                        <a class="nav-link" href="#">Inicio</a> <!-- Enlace de navegación a la página de inicio, actualmente apunta a # -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+                <!-- Formulario de búsqueda -->
+                <form class="d-flex search-form"> <!-- Formulario de búsqueda con display flex para alinear elementos -->
+                    <input class="form-control me-2" type="search" placeholder="Búsqueda" aria-label="Search"> <!-- Campo de entrada para búsqueda con clase Bootstrap y margen a la derecha -->
+                    <button class="btn btn-outline-light" type="submit">Buscar</button> <!-- Botón de envío del formulario con estilo de contorno claro -->
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section class="hero-image">
+        <div>
+    <h2>Tienda en línea con Bootstrap</h2>
+        </div> 
+    </section>
+    <div class="container text-center">
+        <h2 class="fs-4 mt-5">Nuestros Productos</h2>
+    </div>
+    <!-- Primera sección de tarjetas -->
+    <section class="py-3"> <!-- Sección con padding vertical de 5 unidades -->
+        <div class="container"> <!-- Contenedor Bootstrap para mantener el contenido alineado -->
+            <div class="row g-0"> <!-- Fila Bootstrap sin espacios entre columnas (g-0) -->
+                <!-- Imagen del producto -->
+                <div class="col-md-6"> <!-- Columna que ocupa 6 de 12 unidades en pantallas medianas o mayores -->
+                    <img src="./imagenes/producto1.jpg" class="img-fluid" alt="Producto 1">
+                </div>
+                <!-- Detalles del producto -->
+                <div class="col-md-6 bg-primary text-white p-5"> <!-- Columna con fondo azul y texto blanco, con padding -->
+                    <h5 class="mt-5">Producto 1</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eum quidem quo, obcaecati adipisci ipsa commodi sit incidunt consequuntur consectetur nemo harum neque, magnam dolorem architecto ad eveniet cupiditate pariatur dignissimos.</p>
+                    <p class="h4 mt-3">$12,000</p>
+                    <div class="text-center">
+                    <a  href="#" class="btn btn-success shadow mt-2 text-muted">Agregar al carrito</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Segunda sección de tarjetas -->
+   
+
+    <section class="container mt-5"> <!-- Sección con margen superior de 5 unidades -->
+        <div class="row">
+            <!-- Tarjeta 1 -->
+            <div class="col-md-6 mb-4"> <!-- Columna que ocupa 6 unidades con margen inferior -->
+                <div class="card h-100"> <!-- Tarjeta Bootstrap que ocupa toda la altura disponible -->
+                    <img src="./imagenes/producto2.jpg" class="card-img-cap" alt="Producto 2">
+                    <div class="card-body bg-primary text-white"> <!-- Cuerpo de la tarjeta con fondo azul y texto blanco -->
+                        <h5 class="card-title">Producto 2</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quidem quo obcaecati adipisci ipsa commodi sit incidunt consequuntur consectetur nemo harum neque, magnam dolorem architecto ad eveniet cupiditate pariatur dignissimos.</p>
+                        <p class="card-text fw-bold">$12,000</p>
+                        <div class="text-center">
+                        <a href="#" class="btn btn-success shadow text-muted">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="./imagenes/producto3.jpg" class="card-img-cap" alt="Producto 3">
+                    <div class="card-body bg-primary text-white">
+                        <h5 class="card-title">Producto 3</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quidem quo obcaecati adipisci ipsa commodi sit incidunt consequuntur consectetur nemo harum neque, magnam dolorem architecto ad eveniet cupiditate pariatur dignissimos.</p>
+                        <p class="card-text fw-bold">$12,000</p>
+                        <div class="text-center">
+                        <a href="#" class="btn btn-success shadow text-muted">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tercera sección de tarjetas -->
+    <section class="container mt-5">
+        <div class="row">
+            <!-- Tarjeta 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card tarjetasmedio h-100">
+                    <img src="./imagenes/producto4.jpg" class="card-img-cap" alt="Producto 4">
+                    <div class="card-body bg-primary text-white">
+                        <h5 class="card-title">Producto 4</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit optio quasi Fugiat dolores repellat cumque amet tempora id harum sunt quo ipsum quae rerum, sit placeat nostrum enim?</p>
+                        <p class="card-text fw-bold mb-2">$12,000</p>
+                        <div class="text-center">
+                        <a href="#" class="btn btn-success shadow text-muted">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card tarjetasmedio h-100">
+                    <img src="./imagenes/producto5.jpg" class="card-img-cap" alt="Producto 5">
+                    <div class="card-body bg-primary text-white">
+                        <h5 class="card-title">Producto 5</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit optio quasi Fugiat dolores repellat cumque amet tempora id harum sunt quo ipsum quae rerum, sit placeat nostrum enim?</p>
+                        <p class="card-text fw-bold mb-2">$12,000</p>
+                        <div class="text-center">
+                        <a href="#" class="btn btn-success shadow text-muted">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card tarjetasmedio h-100">
+                    <img src="./imagenes/producto6.jpg" class="card-img-cap" alt="Producto 6">
+                    <div class="card-body bg-primary text-white">
+                        <h5 class="card-title">Producto 6</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit optio quasi Fugiat dolores repellat cumque amet tempora id harum sunt quo ipsum quae rerum, sit placeat nostrum enim?</p>
+                        <p class="card-text fw-bold mb-2">$12,000</p>
+                        <div class="text-center">
+                        <a href="#" class="btn btn-success shadow text-muted">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <div class="container text-center"> <!-- Contenedor centrado para el título de categorías -->
+        <h3 class="fs-4 mt-5 texto-categorias">Categorías</h3>
+    </div>
+
+    <!-- Tarjetas al final de la página -->
+    <section class="container mt-3">
+        <div class="row">
+            <div class="col-md-4 mb-4"> 
+                <div class="card tarjetas-final">
+                    <img src="./imagenes/oficina.jpg" class="card-img-top" alt="Oficina">
+                    <div class="card-body text-center tarjetas-finales rounded">
+                        <h5 class="card-title"><a href="#">Oficina</a></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card tarjetas-final">
+                    <img src="./imagenes/hogar.jpg" class="card-img-top" alt="Hogar">
+                    <div class="card-body text-center tarjetas-finales rounded">
+                        <h5 class="card-title"><a href="#">Hogar</a></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card tarjetas-final">
+                    <img src="./imagenes/cocina.jpg" class="card-img-top" alt="Cocina">
+                    <div class="card-body text-center tarjetas-finales rounded">
+                        <h5 class="card-title"><a href="#">Cocina</a></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white mt-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Categorías</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="text-white text-decoration-none" href="#" onclick="return false;">Cocina</a></li>
+                        <li><a class="text-white text-decoration-none" href="#" onclick="return false;">Oficina</a></li>
+                        <li><a class="text-white text-decoration-none" href="#" onclick="return false;">Jardín</a></li>
+                        <li><a class="text-white text-decoration-none" href="#" onclick="return false;">Cochera</a></li>
+                        <li><a class="text-white text-decoration-none" href="#" onclick="return false;">Dormitorios</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Sobre Nosotros</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="text-white text-decoration-none" href="#" onclick="return false;">Misión, visión y valores</a></li>
+                        <li><a class="text-white text-decoration-none" href="#" onclick="return false;">Carrera</a></li>
+                        <li><a class="text-white text-decoration-none" href="#" onclick="return false;">Nuestra Historia</a></li>
+                        <li><a class="text-white text-decoration-none" href="#" onclick="return false;">Políticas de privacidad</a></li>
+                        <li><a class="text-white text-decoration-none" href="#" onclick="return false;">Términos del servicio</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Soporte</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="text-white text-decoration-none" href="#" onclick="return false;">Preguntas frecuentes</a></li>
+                        <li><a class="text-white text-decoration-none" href="#" onclick="return false;">Ayuda en línea</a></li>
+                        <li><a class="text-white text-decoration-none" href="#" onclick="return false;">Confianza y seguridad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="text-center">
+                <p class="mb-0">Todos los derechos reservados. Tienda de Muebles</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS y Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
