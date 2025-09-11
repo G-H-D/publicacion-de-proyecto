@@ -78,7 +78,7 @@
         .hero-image{
             min-height: 25rem;
             background-image: url(../imagenes/principal2.jpg);   
-            background-position: 100% 90%;
+            background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
         }
